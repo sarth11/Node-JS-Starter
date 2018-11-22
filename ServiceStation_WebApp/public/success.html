@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="css/style.css">
+        <title>Success</title>
+    </head>
+    <body>
+        <h1 class="notify">Login Successfull!!</h1>
+        <br>
+        <h2>Enter Details Please!</h2>
+        <form method="POST" action="/receipt" class="notify">
+            Customer name:<br>
+            <input type="text" name="customername" placeholder="Sarthak Soni" pattern="^[A-Za-z ]+$" maxlength="50" align="center" required autocomplete="off">
+            <br>
+            Mobile No:<br>
+            <input type="text" name="mobilenumber" placeholder="9928041292" pattern="[789][0-9]{9}" maxlength="10" required autocomplete="off">
+            <br>
+            Arrival Time:<br>
+            <input type="text" name="arrivaltime" placeholder="14:34" pattern="([01]?[0-9]|2[0-3]):[0-5][0-9]" maxlength="5" required autocomplete="off">
+            <br>
+            Car No(4 digit):<br>
+            <input type="text" name="carnumber" placeholer="4 digit no." pattern="[0-9]{4}" maxlength="4" required autocomplete="off">
+            <br>
+            Brand:<br>
+            <input type="text" name="brand" placeholder="Honda" pattern="^[A-Za-z ]+$" maxlength="30" required autocomplete="off">
+            <br>
+            Model:<br>
+            <input type="text" name="model" placeholder="Jazz" pattern="^[A-Za-z ]+$" maxlength="30" required autocomplete="off">
+            <br>
+            Amount Due:<br>
+            <input type="number" name="amountdue" placeholder="2000" min="300" max="100000000000" required autocomplete="off">
+            <br>
+            <p class="submit"><input type="submit" name="commit" value="Submit"</p>
+            <br>
+          </form>
+          <form action="/" class="notify">
+            <input type="submit" value="Log Out">
+            </form>
+    </body>
+</html>
